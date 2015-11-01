@@ -1,3 +1,4 @@
+'use strict';
 class X extends Error {
   constructor(message) {
     super(message);
@@ -12,3 +13,4 @@ class X extends Error {
 var a = new X();
 console.log(X.isX(a)); // false
 console.log(a instanceof X); // false
+console.log(a instanceof Error); // true
